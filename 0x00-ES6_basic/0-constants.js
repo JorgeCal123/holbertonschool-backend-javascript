@@ -1,5 +1,3 @@
-console.log("hola mundo");
-
 export function taskFirst() {
     const task = 'I prefer const when I can.';
     return task;
@@ -14,5 +12,4 @@ export function taskFirst() {
     combination += getLast();
   
     return combination;
-}
-  console.log("adios mundo cruel");
+  }

@@ -14,7 +14,7 @@ export default class HolbertonCourse {
       }
       this._students = students;
     } else {
-      throw new TypeError('Students must be an array of strings');
+      throw new TypeError('Students must be an array');
     }
     this._name = name;
     this._lenght = lenght;

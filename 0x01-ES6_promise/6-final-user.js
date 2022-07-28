@@ -6,7 +6,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
     .then((result) => {
         const list2 = []
             result.map((values) => {
-                list2.push({status: values.status, value: values.value,});
+                list2.push({status: values.status, value: `${values.reason}`});
             })
             console.log(list2);
             return list2;

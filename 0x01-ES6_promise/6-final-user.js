@@ -9,10 +9,10 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
     .then((result) => {
       const list = result.map((value) => {
         if (value.status === 'fulfilled') {
-          return value; 
+          return value;
         }
         return { status: value.status, value: `${value.reason}` };
       });
       return list;
-  });
+    });
 }

@@ -1,12 +1,7 @@
-export default function getStudentIdsSum(list) {
-  let suma = 0;
+export default function getlistsumaSum(list) {
   if (Array.isArray(list)) {
-    list.map((student) => {
-      suma += student.id;
-      return suma;
-    });
-  } else {
-    suma = [];
+    const suma = list.reduce((count, students) => count + students.id, 0);
+    return suma;
   }
-  return suma;
+  return [];
 }

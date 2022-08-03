@@ -1,6 +1,6 @@
 export default function cleanSet(set, startString) {
   const list = [...set.values()];
-  if (startString === undefined || startString === '') {
+  if (startString === undefined || startString === '' || typeof startString !== 'string') {
     return '';
   }
   const newlist = [];

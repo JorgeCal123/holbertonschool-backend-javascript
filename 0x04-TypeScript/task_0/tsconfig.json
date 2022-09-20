@@ -1,0 +1,13 @@
+//outdir:  es la direccion en donde se guardan los archivos creados
+//target: version de lenguaje javasript en de ts => js
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module": "es6",
+      "target": "es5",
+      "allowJs": true,
+      "moduleResolution": "node"
+    }
+  }
